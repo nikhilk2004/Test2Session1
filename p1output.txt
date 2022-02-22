@@ -1,1 +1,4 @@
-
+ gcc -g p1original.c -lm
+ ./a.out
+enter numbers :1 1 2 2
+distance bewteen points (1.000000,1.000000)and(2.000000,2.000000)is1.414214 
