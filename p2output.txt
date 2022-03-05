@@ -1,1 +1,10 @@
-
+ gcc -g p2original.c
+ ./a.out
+Enter the points :
+6
+2
+1
+3
+2
+3
+the points will not form triangle
