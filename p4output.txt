@@ -1,1 +1,5 @@
 
+ gcc -g p4original.c 
+ ./a.out
+Enter n: 11
+Fibo(11) is 89
