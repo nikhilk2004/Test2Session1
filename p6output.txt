@@ -1,1 +1,9 @@
 
+ 
+ gcc -g p6original.c 
+ ./a.out
+Enter the string:
+nikhilreddy
+Enter the substring:
+reddy
+The index of reddy in nikhilreddy is 6
