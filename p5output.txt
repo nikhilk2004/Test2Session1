@@ -1,1 +1,7 @@
 
+ gcc -g p5original.c 
+ ./a.out
+Enter the number till which you want to find the prime numbers
+11
+2,3,5,7,11
+ 

@@ -1,33 +1,40 @@
 #include<stdio.h>
-
-void input(int *num1, int *den1, int *num2, int *den2)
+int input_number()
 {
-  printf("enter the numerator of 1st num: \n");
-  scanf("%d",num1);
-  printf("enter the denominator of 1st num: \n");
-  scanf("%d",den1);
-  printf("enter the numerator of 2nd num: \n");
-  scanf("%d",num2);
-  printf("enter the denominator of 2nd num: \n");
-  scanf("%d",den2);
+  int n;
+  printf("enter any number :");
+  scanf("%d",&n);
+  return n;
 }
-
-void add(int num1,int den1, int num2, int den2, int *num3, int *den3)
+int is_prime(int n)
 {
-  *num3 = num1+num2;
-  *den3 = den1+den2;
+  int flag=0,i;
+  for(i=2;i<n;i++)
+  {
+    if(n%i==0)
+    {
+      flag=1;
+      break;
+    }
+  }
+  return flag;
 }
-
-void output(int num1, int den1, int num2, int den2, int num3, int den3)
+void output(int n, int is_prime)
 {
-  printf("The sum of %d/%d + %d/%d = %d/%d",num1,den1,num2,den2,num3,den3);
+  if(is_prime==1)
+  {
+    printf("%d is not prime number",n);
+  }
+  else
+  {
+    printf("%d is prime number",n);
+  }
 }
-
 int main()
 {
-  int a,b,c,d,x,y;
-  input(&a,&b,&c,&d);
-  add(a,b,c,d,&x,&y);
-  output(a,b,c,d,x,y);
+  int n,prime;
+  n=input_number();
+  prime=is_prime(n);
+  output(n,prime);
   return 0;
 }
